@@ -181,7 +181,7 @@ class DlpInterpreter(cmd2.Cmd):
         for p in range(self.prgid, self.reifier.prgid+1):
             reifiedOut.write('pids(%d,%d).\n' % (p,self.prgid))
         reifiedOut.close()
-        self.singleshotcmds.append('./reify.py %d < %s > %s.reified' %(self.prgid,currUpdatePrgName,currUpdatePrgName))
+        self.singleshotcmds.append('./reifier.py %d < %s > %s.reified' %(self.prgid,currUpdatePrgName,currUpdatePrgName))
         self.singleshotcmds.append('cat %s.reified >> %s.ssupd' %(currUpdatePrgName,self.dlpname))
 
         self.poutput('Updating ...')
