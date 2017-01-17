@@ -26,7 +26,7 @@ Additionally, it needs Python 3 to be installed on your system.
 In case the `cmd2` package has not been installed on your system, please check package repositories for your operating system.
 In Debian/Ubuntu based systems, you can run `apt-get install python3-cmd2` to install `cmd2` for Python.
 
-`moviola` is in early development stage. There is no formal release yet.
+`moviola` is in early development stage. There is no official release yet.
 You can download the repository as a zip or fetch it using git.
 
 ## Usage
