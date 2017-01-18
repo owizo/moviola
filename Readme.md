@@ -1,6 +1,6 @@
 # Moviola
 
-A Dynamic Logic Programming (DLP) Interpreter
+A Dynamic Logic Program (DLP) Interpreter
 
 ## Overview
 
