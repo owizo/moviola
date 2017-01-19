@@ -31,4 +31,16 @@ You can download the repository as a zip or fetch it using git.
 
 ## Usage
 
+The main mode of use for `moviola` is via interactive command-line shell.
+It can be run as follows.
+The `>>` prompt denotes `moviola` is waiting your commands.
+
+```bash
+$ clingo --acyc-prop=0 moviola-py.lp
+clingo version 5.1.0
+Reading from moviola-py.lp
+Changing semantics: RD
+>> 
+```
+
 
