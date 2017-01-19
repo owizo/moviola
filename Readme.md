@@ -65,6 +65,7 @@ It opens your default editor (in Linux via `EDITOR` environment variable).
 After you enter and save the propositional normal logic program using your editor, 
 `moviola` processes it and updates the current DLP.
 Let's enter the logic program with only one fact `p.` as an update.
+Here is what `moviola` outputs:
 
 ```bash
 p.
@@ -74,9 +75,12 @@ Updating ...
 ```
 
 We can compute the models of the current DLP by `solve` command.
+Additionally, the `model` command expects an integer that shows the maximum number of models to compute
+(1 is the default value and 0 means all models).
 Note that we are using the RD semantics and the only model we get is `{p}`.
 
 ```bash
+>> model 0
 >> solve
 Solving...
 Answer: 1
@@ -99,11 +103,8 @@ p
 ```
 
 You can change the underlying semantics anytime and investigate their differences.
-The `model` command expects an integer that shows the maximum number of models to compute
-(1 is the default value and 0 means all models).
 
 ```bash
->> model 0
 >> semantics ju
 Changing semantics: JU
 >> solve
