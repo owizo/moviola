@@ -75,12 +75,12 @@ Updating ...
 ```
 
 We can compute the models of the current DLP by `solve` command.
-Additionally, the `model` command expects an integer that shows the maximum number of models to compute
+Additionally, the `models` command expects an integer that shows the maximum number of models to compute
 (1 is the default value and 0 means all models).
 Note that we are using the RD semantics and the only model we get is `{p}`.
 
 ```bash
->> model 0
+>> models 0
 >> solve
 Solving...
 Answer: 1
